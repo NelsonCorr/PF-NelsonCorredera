@@ -215,9 +215,10 @@ nav ul li {
 
 img:hover:not(.div2 img, .logo, ul img) {
 
-    border-color: black;
-    border-width: 10px;
-    border-style: groove;
+    border-color: rgb(3, 2, 2);
+    border-width: 5px;
+    border-style:solid;
+
 }
 
 
@@ -348,6 +349,192 @@ input[type=email]:valid {
     margin-left: 170px;
 }
 
+@media only screen and (max-width: 1024px) {
+
+
+    .inicio a {
+
+        font-size: 30px;
+    }
+
+    nav ul li {
+
+        font-size: 20px;
+
+    }
+
+    .maquinas {
+        margin-top: 10px;
+        display: grid;
+        grid-template-areas:
+            "brazo centro torno "
+            "brazo centro torno "
+            "brazo centro torno ";
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 100px 300px 250px;
+        justify-content: space-between;
+        text-align: center;
+    
+    }
+
+    div h3 {
+        font-size: 15px;
+        color: #000000;
+
+    }
+
+    .brazo {
+        border-radius: 20px;
+        grid-area: brazo;
+        background-color: #a73434;
+        width: 280px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+    
+    .brazo img {
+        border-radius: 20px;
+        height: 200px;
+        width: 200px;
+    
+    }
+    
+    .centro {
+        border-radius: 20px;
+        grid-area: centro;
+        background-color: #db7171;
+        width: 280px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+    
+    .centro img {
+        border-radius: 20px;
+        height: 200px;
+        width: 200px;
+    }
+    
+    .torno {
+        border-radius: 20px;
+        grid-area: torno;
+        background-color: rgb(50, 50, 218);
+        width: 280px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+    
+    .torno img {
+        border-radius: 20px;
+        height: 200px;
+        width: 200px;
+    }
+
+    body {
+
+        display: grid;
+        grid-template-areas:
+            "nav "
+            "main "
+            "footer";
+        grid-template-columns: auto;
+        grid-template-rows: 100px 650px 125px;
+        min-height: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: oblique;
+        background-color: rgb(191, 197, 197);
+        margin: 0;
+        line-height: normal;
+    
+    }
+ 
+    .infocard {
+    
+        margin: 0px;
+    
+    }
+    
+    .newsletter {
+    
+        margin: 0px;
+    
+    }
+    
+    .mapse {
+        max-height: 300px;
+        max-width: 300px;
+        margin-left: 0;
+        padding-bottom: 10px;
+    }
+    
+    .maps {
+    
+        margin: 0 0 0 10px;
+        width: 280px;
+    }
+    .card {
+        margin-top: 50px;
+        max-width: 300px;
+        padding-bottom: 10px;
+    }
+    .cardconf {
+
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    
+    .card-body {
+        
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    div h2 {
+    
+        font-size: medium;
+    }
+    
+    div iframe {
+        width: 300px;
+        height: 300px;
+    }
+    
+    div ul li {
+    
+        font-size: small;
+    
+    }
+    
+    .card {
+     
+        max-width: 300px;
+        padding-bottom: 10px;
+    }
+    
+    .col {
+    
+        padding: 0;
+    
+    }
+    
+
+
+
+
+footer ul img{
+
+    margin-left: 200px;
+
+}
+
+footer ul li {
+
+    padding-left: 180px;
+}
+
+
+
+}
+
 @media only screen and (max-width: 425px) {
 
 
@@ -437,7 +624,7 @@ input[type=email]:valid {
 
         border-color: black;
         border-width: 2px;
-        border-style: groove;
+        border-style: solid;
     }
     
     .brazo {
@@ -518,7 +705,7 @@ input[type=email]:valid {
 
     .cardconf {
 
-        margin-top: 0;
+        margin: 0;
 
     }
 
@@ -570,7 +757,7 @@ input[type=email]:valid {
     }
 
     .card {
-
+        margin-top: 0px;
         max-width: 300px;
         padding-bottom: 10px;
     }
