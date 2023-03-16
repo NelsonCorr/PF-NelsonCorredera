@@ -312,21 +312,27 @@ input[type=email]:valid {
 .newsletter {
 
     margin-top: 40px;
-    margin-left: 200px;
+    margin-left: 10%;
     margin-right: 100px;
 
 }
 
 .infocard {
 
-    margin-left: 200px;
-    margin-right: 100px;
+    margin-left: 10%;
+    margin-right: 25%;
 
+}
+
+.row {
+
+    justify-content: start;
 }
 
 .mapse {
 
-    margin-left: 170px;
+    margin-right: 10%;
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -369,7 +375,7 @@ input[type=email]:valid {
 
     }
 
-   
+
 
 
     .column {
@@ -421,7 +427,7 @@ input[type=email]:valid {
     }
 
     .mapse {
-       
+
         margin-left: 0;
         padding-bottom: 10px;
     }
@@ -511,7 +517,7 @@ input[type=email]:valid {
             "footer footer";
 
         grid-template-columns: 125px auto;
-        grid-template-rows: 3fr 100px;
+        grid-template-rows: auto 100px;
 
         margin: 0;
     }
