@@ -59,64 +59,44 @@ main {
     grid-area: main;
 }
 
-.maquinas {
+.row {
     margin-top: 10px;
-    display: grid;
-    grid-template-areas:
-        "brazo centro torno "
-        "brazo centro torno "
-        "brazo centro torno ";
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 100px 500px 500px;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
     text-align: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+
 
 }
 
-.brazo {
-    border-radius: 20px;
-    grid-area: brazo;
+
+.column {
+    flex: 25%;
+    max-width: 25%;
     background-color: #a73434;
-    width: 520px;
-    margin-bottom: 40px;
-    margin-left: 50px;
-}
-
-.brazo img {
-    border-radius: 20px;
-    height: 400px;
-    width: 400px;
+    padding: 0 25px 10px 25px;
+    border-radius: 10px;
+    height: auto;
 
 }
 
-.centro {
-    border-radius: 20px;
-    grid-area: centro;
-    background-color: #db7171;
-    width: 520px;
-    margin-bottom: 40px;
-}
-
-.centro img {
-    border-radius: 20px;
-    height: 400px;
-    width: 400px;
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    max-height: 100%;
+    width: 100%;
 
 }
 
-.torno {
-    border-radius: 20px;
-    grid-area: torno;
-    background-color: rgb(50, 50, 218);
-    width: 520px;
-    margin-bottom: 40px;
+.column h3 {
+
+    font-size: 30px;
 }
 
-.torno img {
-    border-radius: 20px;
-    height: 400px;
-    width: 400px;
-
+.column h4 {
+    font-size: 20px;
 }
 
 footer {
@@ -217,7 +197,7 @@ img:hover:not(.div2 img, .logo, ul img) {
 
     border-color: rgb(3, 2, 2);
     border-width: 5px;
-    border-style:solid;
+    border-style: solid;
 
 }
 
@@ -354,79 +334,21 @@ input[type=email]:valid {
 
     .inicio a {
 
-        font-size: 30px;
+        font-size: 20px;
     }
 
     nav ul li {
 
-        font-size: 20px;
+        font-size: 15px;
 
     }
 
-    .maquinas {
-        margin-top: 10px;
-        display: grid;
-        grid-template-areas:
-            "brazo centro torno "
-            "brazo centro torno "
-            "brazo centro torno ";
-        grid-template-columns: 33% 33% 33%;
-        grid-template-rows: 100px 300px 250px;
-        justify-content: space-between;
-        text-align: center;
-    
-    }
+
 
     div h3 {
         font-size: 15px;
         color: #000000;
 
-    }
-
-    .brazo {
-        border-radius: 20px;
-        grid-area: brazo;
-        background-color: #a73434;
-        width: 280px;
-        margin-bottom: 40px;
-        margin-left: 20px;
-    }
-    
-    .brazo img {
-        border-radius: 20px;
-        height: 200px;
-        width: 200px;
-    
-    }
-    
-    .centro {
-        border-radius: 20px;
-        grid-area: centro;
-        background-color: #db7171;
-        width: 280px;
-        margin-bottom: 40px;
-        margin-left: 20px;
-    }
-    
-    .centro img {
-        border-radius: 20px;
-        height: 200px;
-        width: 200px;
-    }
-    
-    .torno {
-        border-radius: 20px;
-        grid-area: torno;
-        background-color: rgb(50, 50, 218);
-        width: 280px;
-        margin-bottom: 40px;
-        margin-left: 20px;
-    }
-    
-    .torno img {
-        border-radius: 20px;
-        height: 200px;
-        width: 200px;
     }
 
     body {
@@ -437,100 +359,141 @@ input[type=email]:valid {
             "main "
             "footer";
         grid-template-columns: auto;
-        grid-template-rows: 100px 650px 125px;
+        grid-template-rows: 100px auto 125px;
         min-height: 100%;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-style: oblique;
         background-color: rgb(191, 197, 197);
         margin: 0;
         line-height: normal;
-    
+
     }
- 
+
+   
+
+
+    .column {
+        flex: 25%;
+        max-width: 25%;
+        background-color: #a73434;
+        padding: 0 10px 10px 10px;
+        border-radius: 10px;
+        height: auto;
+
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        max-height: 100%;
+        width: 100%;
+
+    }
+
+    .column h3 {
+
+        font-size: 20px;
+    }
+
+    .column h4 {
+        font-size: 15px;
+    }
+
+    img:hover:not(.div2 img, .logo, ul img) {
+
+        border-color: rgb(3, 2, 2);
+        border-width: 2.5px;
+        border-style: solid;
+
+    }
+
+
     .infocard {
-    
+
         margin: 0px;
-    
+
     }
-    
+
     .newsletter {
-    
+
         margin: 0px;
-    
+
     }
-    
+
     .mapse {
-        max-height: 300px;
-        max-width: 300px;
+       
         margin-left: 0;
         padding-bottom: 10px;
     }
-    
+
     .maps {
-    
+
         margin: 0 0 0 10px;
         width: 280px;
     }
+
     .card {
         margin-top: 50px;
         max-width: 300px;
         padding-bottom: 10px;
     }
+
     .cardconf {
 
         margin-top: 10px;
         margin-left: 100px;
     }
-    
+
     .card-body {
-        
+
         padding-top: 5px;
         padding-bottom: 5px;
+        margin-bottom: 0px;
     }
-    
+
     div h2 {
-    
+
         font-size: medium;
     }
-    
+
     div iframe {
         width: 300px;
         height: 300px;
     }
-    
+
     div ul li {
-    
+
         font-size: small;
-    
+
     }
-    
+
     .card {
-     
+
         max-width: 300px;
         padding-bottom: 10px;
     }
-    
+
     .col {
-    
+
         padding: 0;
-    
+
     }
-    
 
 
 
 
-footer ul img{
 
-    margin-left: 200px;
+    footer ul img {
 
-}
+        margin-left: 50px;
 
-footer ul li {
+    }
 
-    padding-left: 180px;
-}
+    footer ul li {
 
+        padding-left: 30px;
+        font-size: 15px;
+    }
 
 
 }
@@ -546,8 +509,8 @@ footer ul li {
         grid-template-areas:
             "nav main "
             "footer footer";
-        min-height: 150vh;
-        grid-template-columns: 125px 300px;
+
+        grid-template-columns: 125px auto;
         grid-template-rows: 3fr 100px;
 
         margin: 0;
@@ -599,81 +562,41 @@ footer ul li {
 
     }
 
+    .row {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        text-align: center;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
 
-    .maquinas {
-        margin: 0;
-        display: grid;
-        grid-template-areas:
-            "brazo centro "
-            "brazo centro "
-            "brazo centro "
-            "torno torno ";
-        grid-template-columns: 150px 150px;
-        grid-template-rows: 100px 250px 100px 200px;
-        justify-items: start;
-        justify-content: start;
+
     }
 
-    div h3 {
-        font-size: 15px;
-        color: #000000;
+
+    .column {
+
+        background-color: #a73434;
+        padding: 0 5px 10px 5px;
+        border-radius: 10px;
+        height: auto;
+
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        max-height: 100%;
+        width: 100%;
 
     }
 
     img:hover:not(.div2 img, .logo, ul img) {
 
-        border-color: black;
-        border-width: 2px;
+        border-color: rgb(3, 2, 2);
+        border-width: 0.5px;
         border-style: solid;
-    }
-    
-    .brazo {
-        border-radius: 0;
-        width: 150px;
-        padding-top: 17px;
-        margin: 0;
-    }
-
-    .brazo img {
-        border-radius: 20px;
-        height: 100px;
-        width: 100px;
-
-    }
-
-    .centro {
-        border-radius: 0;
-        width: 150px;
-        margin: 0;
-
-    }
-
-    .centro img {
-        border-radius: 20px;
-        height: 100px;
-        width: 100px;
-
-    }
-
-    .torno {
-        margin: 0 0 0px 0;
-        border-radius: 0px;
-        grid-area: torno;
-        background-color: rgb(50, 50, 218);
-        width: 300px;
-        padding: 0 0px 20px 0;
-    }
-
-    .torno img {
-        border-radius: 20px;
-        height: 100px;
-        width: 100px;
-
-    }
-
-    .torno h3 {
-
-        padding-left: 5px;
 
     }
 
@@ -768,11 +691,22 @@ footer ul li {
 
     }
 
+    .column h3 {
+
+        font-size: 12px;
+    }
+
+    .column h4 {
+
+        font-size: 8px;
+    }
+
     footer ul li {
 
 
         color: rgb(255, 255, 255);
         padding: 0;
+        left: 80px;
         list-style-type: none;
         width: 220px;
         font-size: 12px;
@@ -782,13 +716,51 @@ footer ul li {
 
         position: relative;
         top: 75px;
-        left: 50px;
+        left: 0px;
         display: inline;
         height: 70px;
         margin-left: 0;
         border: #ffffff;
         border-style: dashed;
         border-width: 2px;
+
     }
 
+    footer ul {
+
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .column h3 {
+
+        font-size: 10px;
+    }
+
+    .column h4 {
+
+        font-size: 8px;
+    }
+
+    .row {
+
+        flex-wrap: wrap;
+        padding: 0;
+        text-align: center;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+
+
+    }
+
+    .column {
+
+        background-color: #a73434;
+        padding: 0 6px 10px 6px;
+        border-radius: 10px;
+        height: auto;
+
+    }
 }
