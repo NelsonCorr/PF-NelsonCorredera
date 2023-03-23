@@ -1,0 +1,24 @@
+
+
+/* BODY */
+
+
+body {
+
+    display: grid;
+    grid-template-areas:
+        "nav "
+        "main "
+        "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto auto;
+    min-height: 100%;
+    font-family: Georgia, 'arial', Sans-serif;
+    font-style: oblique;
+    background-color: rgb(191, 197, 197);
+    margin: 0;
+    line-height: normal;
+
+}
+
+

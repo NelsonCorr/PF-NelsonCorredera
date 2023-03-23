@@ -1,0 +1,260 @@
+main {
+    min-height: 75vh;
+    grid-area: main;
+}
+
+img:hover:not(.div2 img, .logo, ul img) {
+
+    border-color: rgb(3, 2, 2);
+    border-width: 5px;
+    border-style: solid;
+
+}
+
+div {
+    h2 {
+
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        color: #000000;
+    }
+
+    h3 {
+        font-size: 40px;
+        color: #000000;
+        
+    }
+}
+
+
+
+/* INDEX */
+
+.div2 {
+
+    @include flex (row);
+    align-items: start;
+    height: 670px;
+    justify-content: center;
+
+    img {
+        max-width: 20%;
+        border-style: groove;
+        border-radius: 20px;
+        border-color: rgb(0, 0, 0);
+        margin: 0 1% 0 1%;
+    }
+
+    iframe {
+        border-style: groove;
+        border-radius: 20px;
+        border-color: rgb(45, 46, 45);
+    }
+}
+
+
+
+.video {
+
+    margin: 0 1% 250px 1%;
+
+}
+
+
+/* NUESTRAS MAQUINAS */
+
+.row {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+
+
+}
+
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    background-color: #a73434;
+    padding: 0 25px 10px 25px;
+    border-radius: 10px;
+    height: auto;
+
+    img {
+        margin-top: 8px;
+        vertical-align: middle;
+        max-height: 100%;
+        width: 100%;
+
+    }
+
+    h3 {
+
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+}
+
+/* SERVICE */
+
+.fieldServ {
+    
+    @include flex (column);
+    min-height: 650px;
+    align-items: center;
+    row-gap: 150px;
+    margin-top: 150px;
+
+    .FondoTituloService {
+        background-image: url(https://indufitmachine.es/wp-content/uploads/2018/01/reparacion-de-maquinas-industriales-Indufitmachine-madrid-mantenimiento.jpg);
+        
+      height: 540px;
+
+        h3 {
+            color: rgb(0, 0, 0);
+            font-size: 80px;
+            text-align: center;
+            margin-top: 150px;
+            background-color: rgba(240, 248, 255, 0.397);
+        }
+    }
+
+    h4 {
+
+        font-size: 50px;
+        text-align: center;
+    }
+}
+.Col {
+    width: 44%;
+}
+.fieldset {
+    
+    margin-bottom: 10px;
+}
+.fallatext {
+    position: absolute;
+    top: auto;
+}
+
+.fallas {
+    width: 200px;
+    height: 50px;
+    margin-left: 225px;
+    align-content: center;
+}
+
+
+
+/* CONTACTO */
+
+
+
+.contacto div ul li {
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+
+}
+
+.maps {
+
+    margin: 0 0 25px 25px;
+
+}
+
+input[type=email]:invalid {
+
+    background-color: red;
+}
+
+input[type=email]:valid {
+
+    background-color: green;
+}
+
+
+
+
+.ubicacion {
+
+    align-items: baseline;
+    padding: 0 0 20px 15px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    
+}
+.card-body{
+    padding-top: 10px;
+
+    h2 {
+        margin: 0;
+        
+    }
+    h3{
+        margin: 0;
+        font-size: 30px;
+        
+    }
+}
+
+.newsText {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.mapse {
+
+    margin-right: 10%;
+
+}
+
+
+
+
+/* CONOCENOS */
+
+.conocenos {
+
+    
+    @include flex (column);
+    justify-content: center;
+    align-items: center;
+    row-gap: 100px;
+    
+    h3 {
+        
+        text-align: center;
+        font-size: 100px;
+
+    }
+
+    p {
+
+
+        width: 75%;
+        display: inline-block;
+        text-align: center;
+        font-size: 30px;
+    }
+
+  
+    img {
+
+        margin-bottom: 20px;
+
+    }
+}

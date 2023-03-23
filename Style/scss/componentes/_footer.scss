@@ -1,0 +1,40 @@
+footer {
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #000000;
+    width: auto;
+    height: 125px;
+    align-items: end;
+    grid-area: footer;
+    position: relative;
+    min-height: 100px;
+
+    ul {
+        img {
+
+            position: relative;
+            top: 100px;
+            display: inline;
+            height: 100px;
+            margin-left: 400px;
+            border: #ffffff;
+            border-style: dashed;
+            border-width: 2px;
+        }
+
+        li {
+
+            position: relative;
+            left: 150px;
+            color: rgb(255, 255, 255);
+            padding-left: 400px;
+            list-style-type: none;
+
+        }
+    }
+}
+
+
+

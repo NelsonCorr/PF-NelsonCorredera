@@ -6,72 +6,92 @@
     <link rel="stylesheet" href="../Style/css/style.css">
     <link rel="icon" href="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX31039579.jpg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servie en garantia"> 
+    <meta name="keyword" content="CNC, ISO, IRAM">
     <title>Automatic inc</title>
 </head>
 
 <body>
-    
-        <nav>
-            <ul class="nave">
 
-                <img src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX31039579.jpg" alt="" class="logo">
-                <li class="inicio"><a href="../index.html">Automatic inc</a> </li>
-                <li><a href="./nuestras-maquinas.html">Nuestras máquinas</a></li>
-                <li><a href="./service.html">Service</a></li>
-                <li><a href="./contacto.html">Contactenos</a> </li>
-                <li><a href="./conocenos.html">Conocenos</a></li>
+    <header>
+        <div class="contenedor">
+            <div class="inicio-mobile">
+                <li><img src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX31039579.jpg"
+                        alt="logo automatic inc" class="logo2"></li>
+                <li><a href="./index.html">Automatic inc</a> </li>
 
-            </ul>
-        </nav>
-   
-<main>
-    <div class="fieldServ" >
+            </div>
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">X</span>
+            </label>
 
-        <h3>Ofrecemos un service en garantia a nuestras maquinas de 1 año, pasado este tiempo se debera abonar una
-            tarifa</h3>
+            <nav>
+                <ul>
 
-        <h3 style="text-align: center;">Solicitud de service</h3>
+                    <img src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX31039579.jpg" alt="logo automatic inc" class="logo">
+                    <li class="inicio"><a href="../index.html">Automatic inc</a> </li>
+                    <li><a href="./nuestras-maquinas.html">Nuestras máquinas</a></li>
+                    <li><a href="./service.html">Service</a></li>
+                    <li><a href="./contacto.html">Contactenos</a> </li>
+                    <li><a href="./conocenos.html">Conocenos</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="fieldServ">
+            <div class="FondoTituloService">
+                <h3>Ofrecemos un año de garantía en todas nuestras máquinas</h3>
+            </div>
 
 
-        <form action="txt"></form>
-        <fieldset>
 
-            <legend>Datos de contacto</legend>
+            <div data-aos="fade-up">
+                <form action="txt"></form>
+                <h4 data-aos="fade-up">Solicitud de service</h4>
+                <fieldset data-aos="fade-up">
+                    
+                    <legend>Datos de contacto</legend>
+                    <div class="form">
+                    <label for="nombre">Nombre del solicitante</label>
+                    <input type="text" id="nombre">
+                    <br>
+                    <br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido">
+                    <br>
+                    <br>
+                    <label for="nomemp">Nombre de la empresa</label>
+                    <input type="text" id="nomemp">
+                    <br>
+                    <br>
+                    <label for="email">email</label>
+                    <input type="email" id="email">
+                    <br>
+                    <br>
+                    <label for="tipomaq">Tipo de máquina</label>
+                    <input type="text" id="tipomaq">
+                    <br>
+                    <br>
+                    <label for="numserie">Numero de serie de la máquina</label>
+                    <input type="text" id="numserie">
+                    <br>
+                    <br>
+                    <label for="falla" class="fallatext">Falla que presenta la máquina</label>
+                    <input type="text" id="falla" class="fallas">
 
-            <label for="nombre">Nombre del solicitante</label>
-            <input type="text" id="nombre">
-            <br>
-            <br>
-            <label for="apellido">Apellido</label>
-            <input type="text" id="apellido">
-            <br>
-            <br>
-            <label for="nomemp">Nombre de la empresa</label>
-            <input type="text" id="nomemp">
-            <br>
-            <br>
-            <label for="email">email</label>
-            <input type="email" id="email">
-            <br>
-            <br>
-            <label for="tipomaq">Tipo de maquina</label>
-            <input type="text" id="tipomaq">
-            <br>
-            <br>
-            <label for="numserie">Numero de serie de la maquina</label>
-            <input type="text" id="numserie">
-            <br>
-            <br>
-            <label for="falla" class="fallatext">Falla que presenta la maquina</label>
-            <input type="text" id="falla" class="fallas">
-
-            <br>
-            <br>
-            <input type="button" id=enviar value="enviar">
-            <input type="button" id=enviar value="limpiar">
-        </fieldset>
-    </div>
-</main>
+                    <br>
+                    <br>
+                    <input type="button" id=enviar value="enviar">
+                    <input type="button" id=enviar value="limpiar">
+                </div>
+                </fieldset>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <ul>
@@ -80,10 +100,15 @@
             <li>Email: gwgaf@gmail.com</li>
             <li>Tel: ****-****</li>
             <li>Whatsapp: ****-****</li>
-            <li>Horario de atencion: 9:00hs a 17:00hs</li>
+            <li>Horario de atención: 9:00hs a 17:00hs</li>
         </ul>
 
     </footer>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
