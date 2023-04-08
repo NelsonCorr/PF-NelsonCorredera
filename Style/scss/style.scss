@@ -1,7 +1,14 @@
 
+/* MIXINS */
 @import "./componentes/mixins";
+
+
+/* HTML */
 @import "./componentes/body";
 @import "./componentes/nav";
 @import "./componentes/contenido";
 @import "./componentes/footer";
+
+
+/* MEDIA QUERIES */
 @import "./componentes/media-queries";

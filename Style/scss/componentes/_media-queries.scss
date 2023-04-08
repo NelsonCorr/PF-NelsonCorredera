@@ -98,7 +98,7 @@
 
 
 
-    /* NUESTRA MAQUINAS */
+    /* NUESTRAS MAQUINAS */
 
 
     .column {
@@ -232,8 +232,9 @@
         /* boton navegador desplegable */
         .inicio-mobile {
 
-
+           
             position: absolute;
+            
             @include flex (row);
             left: 5em;
             top: 1.5em;
@@ -252,8 +253,7 @@
                 }
             }
         }
-
-
+    
 
         .logo2 {
             display: block;
@@ -357,6 +357,8 @@
             padding-top: 5px;
         }
 
+        /* CONOCENOS */
+
         .conocenos {
 
             @include flex (column);
@@ -381,6 +383,8 @@
             }
         }
 
+       /* SERVICE */
+
 
         .fieldServ {
 
@@ -404,6 +408,9 @@
             }
         }
 
+
+        /* FOOTER */
+
         footer ul {
             padding-left: 10px;
 
@@ -422,6 +429,7 @@
         }
     }
 
+ /* MEDIA QUERIE <420px */
 
     @media only screen and (max-width: 425px) {
 
@@ -444,7 +452,7 @@
         }
 
 
-
+        /* NAV */
 
         nav {
 
@@ -471,6 +479,26 @@
 
         }
 
+        .inicio a {
+
+            font-size: 25px;
+            width: 100%;
+        }
+
+        nav ul li .row {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+            text-align: center;
+            justify-content: space-evenly;
+            margin-bottom: 10px;
+
+
+        }
+
+        /* SERVICE*/
+
         .fieldServ {
 
             align-items: center;
@@ -493,26 +521,6 @@
             }
         }
 
-
-
-
-        .inicio a {
-
-            font-size: 25px;
-            width: 100%;
-        }
-
-        nav ul li .row {
-            margin-top: 10px;
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0 4px;
-            text-align: center;
-            justify-content: space-evenly;
-            margin-bottom: 10px;
-
-
-        }
 
         .div2 img {
 
@@ -564,7 +572,7 @@
             padding: 0 10px 10px 0;
         }
 
-
+        /* FOOTER */
 
         footer {
 
@@ -609,7 +617,7 @@
 
         }
 
-
+        /* CONTACTO */
 
         .infocard {
 
@@ -678,8 +686,12 @@
         }
     }
 
+    /* MEDIA QUERIE <320px*/
 
     @media only screen and (max-width: 320px) {
+
+
+        /* NUESTRAS MAQUINAS */
 
         .column {
 
@@ -700,6 +712,9 @@
                 font-size: 8px;
             }
         }
+
+        /*SERVICE*/
+
         .fieldServ {
 
             align-items: center;
@@ -733,6 +748,8 @@
 
 
         }
+
+        /* CONOCENOS */
 
         .conocenos {
 
