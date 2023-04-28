@@ -13,9 +13,9 @@ let val = 0;
 
 let producto = prompt("Ingrese producto a consultar, coloque salir para terminar");
 
-while (producto.toLowerCase != "salir") {
+while (producto != "salir") {
 
-    switch (producto) {
+    switch (producto.toLowerCase()) {
 
         case "torno":
 
@@ -34,7 +34,7 @@ while (producto.toLowerCase != "salir") {
     }
 
     let descuento = prompt("de tener ingrese codigo de descuento");
-    if (descuento.toLowerCase == "bajo") {
+    if (descuento.toLowerCase() == "bajo") {
 
         val = valor * 0.8;
         alert(`se aplica descuento del 20% quedando ${val}`);
@@ -53,7 +53,7 @@ while (producto.toLowerCase != "salir") {
 }
 
 let condicion = prompt("desea saber el total de los productos consultados?");
-if (condicion.toLowerCase == "si") {
+if (condicion.toLowerCase() == "si") {
 
     alert(`precio total de maquina consultadas es de ${final}`);
 
